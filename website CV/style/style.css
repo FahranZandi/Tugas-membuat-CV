@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Deca:wght@100..900&display=swap');
+
+*, html, body {
+    font-family: "Arvo", serif;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: fixed; /* agar navbar tetap di atas saat di-scroll */
+    top: 0;
+    width: 100%;
+    height: 64px; /* tinggi navbar yang konsisten */
+    background-color: lightgray;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* memastikan navbar tetap di depan konten lainnya */
+}
+
+.nav-wrapper {
+    display:flex;
+    justify-content:  space-between;
+    align-items: left ;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1920px;
+    height: 64px;
+    background-color:#020617;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+
+}
+
+.brand-first-name {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.nav-last-name {
+    color: #FACC15;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.nav-menu {
+    flex-grow: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(200px);
+}
+
+.nav-menu > ul > li {
+    display: inline-block; /* Menampilkan item ul berbaris horizontal */
+    padding: 0 15px;
+    /*list-style-type: none;
+    padding: 15px;*/
+}
+
+.nav-menu > ul > li > a {
+    color:#9CA3AF;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-menu > ul > li > a:hover {
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+/* halaman pertama */
+.first-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0F172A;
+    padding: 0 20px;
+}
+
+.first-page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text .greeting {
+    color: #FACC15;
+    font-size: 1.2em;
+}
+
+.intro-text h1 {
+    color: white;
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.intro-text p {
+    color: #9CA3AF;
+    font-size: 1em;
+    margin: 0.5em 0;
+    margin-bottom: 8%;
+}
+
+.intro-text button {
+    background-color: #FACC15;
+    color: #020617;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.intro-image img {
+    max-width: 427px;
+    border-radius: 10px;
+}
+
+.intro-text button:hover {
+    background-color: #020617;
+    color: #FACC15;
+    transition: all .3s ease-in-out;
+}
+
+/* halaman kedua */
+.second-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1E293B;
+    padding: 0 20px;
+}
+
+.second-page .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me img {
+    max-width: 457px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 5vh;
+}
+
+.about-text h2 span {
+    color: #FACC15;
+}
+
+.about-text p {
+    color: #9CA3AF;
+    font-size: 1em;
+    margin: 0.5em 0;
+    margin-bottom: 4%;
+}
+
+.about-text p b{
+    color:aliceblue;
+}
+
+.about-text button {
+    background-color: #FACC15;
+    color: #020617;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.about-text button:hover {
+    background-color: #020617;
+    color: #FACC15;
+    transition: all .3s ease-in-out;
+}
+
+/* halaman ketiga */
+.third-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: #111827;
+    height: 1080px;
+}
+
+.third-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    border-width: 10px;
+}
+.thirdpage-text {
+    transform: translateX(-230px);
+}
+
+.myservices-text {
+    align-content: left;
+    margin-bottom: 10%;
+}
+
+.myservices-text p{
+    color:  #6B7280;
+}
+
+.third-page h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 7%;
+    justify-content: left;
+}
+
+.third-page h2 span {
+    color: #FACC15;
+}
+
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+    background-color: #1F2937; /* Ganti dengan warna yang Anda inginkan */
+    transition: all .2s ease-in-out;
+}
+
+.service-item:hover p {
+    transform: scale(1.0);
+    color: aliceblue; /* Ganti dengan warna yang Anda inginkan */
+    transition: all .2s ease-in-out;
+}
+
+
+.service-item {
+    background-color: #020617;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    height: 100%;
+}
+
+.service-item h3 {
+    color: #FACC15;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #9CA3AF;
+    font-size: 1em;
+    margin: 10%;
+}
+
+.service-item img {
+    width: 10%;
+    height: 30px;
+    margin: 5%;
+}
+
+.thirdpage-text {
+    justify-content: left;
+    border-radius: 50%;
+}
+
+/* halaman keempat */
+.fourth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: #020617;
+}
+
+.fourth-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.fourth-page h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.fourth-page h2 span {
+    color: #FACC15;
+}
+
+.fourth-page p {
+    color: #9CA3AF;
+    font-size: 1em;
+    margin: 10px 0 30px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1E293B;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item:hover{
+    transform: scale(1.1);
+    background-color :#2e3642;
+    
+}
+
+.portfolio-item p {
+    margin: 2%;
+}
+
+
+/* halaman kelima */
+.fifth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: #111827; /* penanda */
+    height: 1080px; /* penanda */
+}
+
+.fifth-page .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.fifth-page h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.fifth-page h2 span {
+    color: #FACC15;
+}
+
+.fifth-page p {
+    color: #9CA3AF;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    /*width: 100%;*/
+    border-radius: 10px;
+    padding: 20px;
+    /*max-width: 300px;*/
+    text-align: center;
+    height: 100%;
+}
+
+.experience-item {
+    background-color: #1F2937;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 140%;
+}
+
+.experience-item h3 {
+    color: #FACC15;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin: 5%;
+}
+
+.experience-item p {
+    color: #9CA3AF;
+    font-size: 1em;;
+    margin: 12px;
+}
+
+.experience-item:hover {
+    transform: scale(1.1);
+    background-color: #596377; /* Ganti dengan warna yang Anda inginkan */
+    transition: all .2s ease-in-out;
+}
+.experience-item:hover p {
+    transform: scale(1.0);
+    color: aliceblue; /* Ganti dengan warna yang Anda inginkan */
+    transition: all .2s ease-in-out;
+}
+
+/* Sixth Page (Contact and About Me) */
+.sixth-page {
+    padding: 60px 0;
+    background-color: #020617;
+}
+
+.contact-section, .about-me-section {
+    margin-bottom: 30px;
+}
+
+.contact-section h2 span {
+    color: #FACC15;
+}
+
+.contact-section h2, .about-me-section h2 {
+    font-size: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section p, .about-me-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group label {
+    color: aliceblue;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color:#1F2937;
+    background-color: #FACC15;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #191D28;
+    color: #FACC15;
+    transition: all .3s ease-in-out;
+}
+
+
+/* Footer */
+.about-me-section {
+    text-align: center;
+}
+
+.about-me-section .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-me-section .social-links a {
+    margin: 0 10px;
+}
+
+.about-me-section .social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.about-me-section .social-links img:hover {
+    transform: scale(1.3);
+}
+
+.footer {
+    background-color: #020617;
+    ;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.about-me-section h2 span {
+    color: #FACC15;
+}
