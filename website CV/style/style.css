@@ -9,13 +9,13 @@
 }
 
 .nav {
-    position: fixed; /* agar navbar tetap di atas saat di-scroll */
+    position: fixed;
     top: 0;
     width: 100%;
-    height: 64px; /* tinggi navbar yang konsisten */
+    height: 64px;
     background-color: lightgray;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* memastikan navbar tetap di depan konten lainnya */
+    z-index: 1000;
 }
 
 .nav-wrapper {
